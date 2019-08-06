@@ -4,6 +4,7 @@
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
 
+
     img {
       max-width: 100%;
       height: auto;
@@ -12,6 +13,12 @@
     h2 {
       margin-top: 20px;
     }
+
+
+  }
+
+  .large {
+    transform: scale(1.3);
   }
 
   .content-section {
@@ -20,8 +27,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -105,10 +112,16 @@
         width: 80%;
         margin: 0 auto 30px;
       }
-      
+
       .btn {
-        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
+        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);
       }
     }
   }
-}// home
+
+  .mouseDown body>div>section:nth-child(2)>div.text-content>p:nth-child(2)::selection {
+    color: white;
+  }
+}
+
+// home
